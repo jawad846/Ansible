@@ -1,2 +1,0 @@
-# ansible
-Ansible Automation Scripts
