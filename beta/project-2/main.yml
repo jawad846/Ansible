@@ -1,0 +1,4 @@
+---
+- import_playbook : playbooks/control.yml
+- import_playbook : playbooks/copy.yml
+- import_playbook : playbooks/apt_install.yml

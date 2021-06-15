@@ -1,0 +1,5 @@
+---
+  - hosts: ec2
+    become: true
+    roles:
+      - ../roles/control

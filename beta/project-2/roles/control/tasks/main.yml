@@ -1,0 +1,10 @@
+---
+# tasks file for control
+- name: Installing required packages
+  apt: name={{item}} state=present update_cache=yes
+  with_items:
+    - python-pip
+    - wget
+    - vim
+    - tcpdump
+    - curl

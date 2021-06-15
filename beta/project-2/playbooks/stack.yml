@@ -1,0 +1,12 @@
+---
+  - hosts: ec2
+    become: true 
+    tasks:
+      - name: Restart Apache2
+        service: name=apache2 state=restarted
+
+  - hosts: ec2
+    become: true 
+    tasks:
+      - name: Stop mysql-server
+        service: name=mysql state=stopped

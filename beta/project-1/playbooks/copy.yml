@@ -1,0 +1,11 @@
+---
+  - hosts: ec2
+    become: true
+    tasks:
+      - name: Copy the file
+        copy: src=/home/ubuntu/test.txt dest=/home/ubuntu/my/ mode=0700 remote_src=yes
+        notify: restart apache2
+
+    handlers:
+      - name: restart apache2
+        service: name=apache2 state=stopped

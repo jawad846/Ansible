@@ -1,0 +1,3 @@
+---
+  - import_playbook : playbooks/hostname.yml
+  - import_playbook : playbooks/apache.yml

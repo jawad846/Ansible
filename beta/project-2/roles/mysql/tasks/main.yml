@@ -1,0 +1,5 @@
+---
+# tasks file for mysql
+- name: Copy the file
+  copy: src=/home/ubuntu/test.txt dest=/home/ubuntu/my/ mode=0700 remote_src=yes
+  notify: restart apache2

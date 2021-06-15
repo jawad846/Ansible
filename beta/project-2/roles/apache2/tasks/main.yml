@@ -1,0 +1,11 @@
+---
+# tasks file for apache2
+- name: Install apache2
+  apt: name=apache2 state=present update_cache=yes
+
+- name: Install nmap
+  apt: name=nmap state=present update_cache=yes
+
+- name: Install mysql
+  apt: name=mysql-server state=present update_cache=yes
+  notify: restart apache2

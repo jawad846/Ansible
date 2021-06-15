@@ -1,0 +1,5 @@
+[control]
+localhost ansible_connection=local
+
+[ec2]
+target ansible_host=13.232.166.200 ansible_connection=ssh ansible_port=22 ansible_user=ubuntu ansible_ssh_private_key_file=/Users/jawad/Downloads/aws-keys/jawad_test.pem
